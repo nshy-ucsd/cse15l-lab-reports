@@ -30,5 +30,21 @@ Now up to this point, everyone should be on the same page. It is now time to log
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 
-5. Now you should be logged in to your account on ssh, and should see something like this: \
- <img width="492" alt="image" src="https://user-images.githubusercontent.com/122579697/212218323-f1e52a94-72a4-4e1c-8bb6-70d12da737fa.png">
+5. Now you should be logged in to your account on ssh, and should see something like this: <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/212218323-f1e52a94-72a4-4e1c-8bb6-70d12da737fa.png">
+
+Congratulations, you are now remotely connected to a computer in the CSE basement! 
+
+## Try some commands
+Now that you are remotely connected, try some commands in your terminal!
+Below is a list of some basic commands that you can run:
+* cd <directory>
+* ls
+* ls -lat
+* la -a
+* pwd 
+
+If you really don't know what to try first, you can use the command "ls" to get all the names of the files/folders in the current directory. \
+And then choose one file and use "cd <name of the file/directory>" to move into that directory. Now you can use the command "pwd" to check 
+   the path of your current directory. \
+   <img width="344" alt="image" src="https://user-images.githubusercontent.com/122579697/212440788-2f8f5c0d-66d8-45c1-979a-9b5b0487fc3f.png">
+
