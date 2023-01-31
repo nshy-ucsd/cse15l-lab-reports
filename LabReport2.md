@@ -85,8 +85,10 @@ The symptom:
 * The test that fails:
 <img width="1112" alt="image" src="https://user-images.githubusercontent.com/122579697/215688648-a80d8476-5173-4440-b764-9b1739a74e9a.png">
 
-* The test that doesn't detect the bug:
+* The test that doesn't detect the bug: 
+
 <img width="571" alt="image" src="https://user-images.githubusercontent.com/122579697/215688334-0a5092cb-dfa1-4891-acf4-fd9ec7ad1907.png">
+
 The original code is something like this (I modified the code during lab so am not 100% sure about what the original code is):
 
 ```
