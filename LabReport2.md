@@ -60,7 +60,60 @@ the url is: "http://localhost:4000/add-message?s=How%20are%20you"
                 *  `curString += "\n";` now a new line char is concatenated to curString
             *  `String[] parameters = url.getQuery().split("=");` splits the url into half (s and the string in this case)
             *  `parameters[0].equals("s")` is true because parameters[0] = s in this case, so the following is called 
-                *  `curString += parameters[1];` this concatenate the original string with the new string after "s=". parameters[1] = "How are you" in this case.
+                *  `curString += parameters[1];` this concatenate the original string with the new string after "s=". parameters[1] =concatenatesou" in this case.
             *  `return String.format(curString);` and then we return the updated string: "Hello\nHow are you".
 
 ## Part 2
+I chose the reversed method from ArrayExamples.java. \
+Here is the JUnit test that fails:\
+```  
+  @Test
+  public void testReversed() {
+    int[] input1 = {1, 2, 3};
+    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+  }
+```
+Here is the JUnit test that doesn't detect the bug:
+```
+  @Test
+  public void testReversed() {
+    int[] input1 = {1};
+    asdoesn'trrayEquals(new int[]{1}, ArrayExamples.reversed(input1));
+  }
+```
+The symptom:
+* The test that fails:
+<img width="1112" alt="image" src="https://user-images.githubusercontent.com/122579697/215688648-a80d8476-5173-4440-b764-9b1739a74e9a.png">
+
+* The test that doesn't detect the bug:
+<img width="571" alt="image" src="https://user-images.githubusercontent.com/122579697/215688334-0a5092cb-dfa1-4891-acf4-fd9ec7ad1907.png">
+The original code is something like this (I modified the code during lab so am not 100% sure about what the original code is):
+
+```
+  static int[] reversed(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+I noticed that the problem is because the reverse method tries to replace elements from “newArray” to “arr” without copying all the elements from “arr” to “newArray”.
+So I inserted a for loop before the one that already existed to copy the items over. \
+Now the code looks like this:
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for (int i = 0; i < newArray.length; i++) 
+    {
+      newArray[i] = arr[i];
+    }
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+ ```
+
+
