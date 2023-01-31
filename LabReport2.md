@@ -41,6 +41,7 @@ class StringServer{
 ```
 Scrrenshot 1:\
 <img width="432" alt="image" src="https://user-images.githubusercontent.com/122579697/215367311-3d9ac038-e8e3-47a1-9a8b-26422490775c.png">
+
 the url is: "http://localhost:4000/add-message?s=Hello"
 * `start(port, new Handler())` is called in the main of StringServer
     * `handleRequest(URI url)` is then called, right now, curString is still "" (an empty string).
@@ -52,6 +53,7 @@ the url is: "http://localhost:4000/add-message?s=Hello"
 
 Scrrenshot 2:\
 <img width="436" alt="image" src="https://user-images.githubusercontent.com/122579697/215367353-b7b50c66-f8d4-479a-8905-f3c31bd26aa4.png">
+
 the url is: "http://localhost:4000/add-message?s=How%20are%20you"
 * `start(port, new Handler())` is called in the main of StringServer
     * `handleRequest(URI url)` is then called, curString is still "Hello".
