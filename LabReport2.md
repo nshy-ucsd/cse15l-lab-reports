@@ -63,7 +63,7 @@ the url is: "http://localhost:4000/add-message?s=How%20are%20you"
                 *  `curString += parameters[1];` this concatenate the original string with the new string after "s=". parameters[1] =concatenatesou" in this case.
             *  `return String.format(curString);` and then we return the updated string: "Hello\nHow are you".
 
-## Part 2
+## Part two
 I chose the reversed method from ArrayExamples.java. \
 Here is the JUnit test that fails:\
 ```  
@@ -116,4 +116,5 @@ Now the code looks like this:
   }
  ```
 
-
+## Part three
+One major thing I learned in lab 2 and lab 3 is that debugging is essential. Even with debugging, there could still be some potential bugs lying inside of our code, needless to say, the code without debugging can be a nightmare. Before I took this class, I usually just complete the code for my CS projects without checking the bugs that my professor did not mention. I think it is now a good time to develop a habit of debugging, thinking from different perspectives to find where my code could possibly fail.
