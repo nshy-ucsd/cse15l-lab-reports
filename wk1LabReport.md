@@ -23,7 +23,8 @@ This part is likely to be the trickiest part of this tutorial, so here comes not
 Now up to this point, everyone should be on the same page. It is now time to log in using ssh.
 1. First, open up the terminal on your visual studio code. (use ctrl + \` or pull down the menubar that says terminal and click on "new terminal") \
    <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/212217334-78ac16ae-6a91-401c-ae20-a35799291724.png">
-2. Next, enter "ssh *Your_account_name*@ieng6.ucsd.edu", where your account name should be something like cs15lwi23**. <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/212217573-448ded81-a3c0-4896-a8a5-a426ca0a7a0b.png">
+2. Next, enter "ssh *Your_account_name*@ieng6.ucsd.edu", where your account name should be something like cs15lsp23**. <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/231063293-df8a23ad-26fc-4baf-ad4e-0d5908187510.png">
+
 3. Now enter your password for your account and log in.
 4. Since it is likely your first time logging in, enter "yes" if you see something like this:
 > The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
