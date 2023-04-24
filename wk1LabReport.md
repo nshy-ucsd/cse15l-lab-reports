@@ -20,10 +20,10 @@ This part is likely to be the trickiest part of this tutorial, so here comes not
 1. Now before we start anything, you probably need to install [git for windows](https://gitforwindows.org) first if you are a Windows user.
 2. After successfully installing, follow the steps in [this guide](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) to set your default terminal to use git bash in visual studio code.
 
-Now up to this point, everyone should be on the same page. It is now time to log in using ssh.
+Now up to this point, everyone should be on the same page. It is now time to log in using ```ssh```. 
 1. First, open up the terminal on your visual studio code. (use ctrl + \` or pull down the menubar that says terminal and click on "new terminal") \
    <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/212217334-78ac16ae-6a91-401c-ae20-a35799291724.png">
-2. Next, enter "ssh *Your_account_name*@ieng6.ucsd.edu", where your account name should be something like cs15lsp23**. <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/231063293-df8a23ad-26fc-4baf-ad4e-0d5908187510.png">
+2. Next, enter ```ssh *Your_account_name*@ieng6.ucsd.edu```, where your account name should be something like cs15lsp23**. <img width="600" alt="image" src="https://user-images.githubusercontent.com/122579697/231063293-df8a23ad-26fc-4baf-ad4e-0d5908187510.png">
 
 3. Now enter your password for your account and log in.
 4. Since it is likely your first time logging in, enter "yes" if you see something like this:
@@ -38,11 +38,11 @@ Congratulations, you are now remotely connected to a computer in the CSE basemen
 ## Try some commands
 Now that you are remotely connected, try some commands in your terminal!
 Below is a list of some basic commands that you can run:
-* cd <directory>
-* ls
-* ls -lat
-* la -a
-* pwd 
+* ```cd <directory>```: change to directory
+* ```ls```: displays the names of the files and directories in alphabetical order
+* ```ls -lat```: displays all files and directories in the current directory, including hidden files and directories, in a long format
+* ```la -a```: displays all files and directories, including hidden ones that start with a dot (.) in the current directory 
+* ```pwd```: print the current directory
 
 If you really don't know what to try first, you can use the command "ls" to get all the names of the files/folders in the current directory. \
 And then choose one file and use "cd <name of the file/directory>" to move into that directory. Now you can use the command "pwd" to check 
