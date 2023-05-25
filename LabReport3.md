@@ -7,9 +7,59 @@
 searches for a specific pattern in one or more files and outputs the names of the files that contain a match, rather than displaying the matching lines themselves. It is particularly useful when you want to quickly identify the files that contain a specific pattern without displaying the actual content of those files. This option is often combined with other grep options to refine the search.
 
 ### example 1
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -l "while," technical/biomed/*.txt
+technical/biomed/1471-2105-3-12.txt
+technical/biomed/1471-2105-3-6.txt
+technical/biomed/1471-2210-2-5.txt
+technical/biomed/1471-2229-3-3.txt
+technical/biomed/1471-2253-2-5.txt
+technical/biomed/1471-2350-4-2.txt
+technical/biomed/1472-6904-2-7.txt
+technical/biomed/1475-925X-2-3.txt
+technical/biomed/gb-2002-3-12-research0077.txt
+nicholasshy@MacBook-Air-2 stringsearch-data % 
+```
+I looked for all files that contain the pattern "while," in the technical/biomed directory, this can be useful to find the filenames of the file that coontain our keyword.
 
 ### example 2
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -l "viruses," technical/biomed/*.txt
+technical/biomed/1471-2105-2-1.txt
+technical/biomed/1471-2105-3-12.txt
+technical/biomed/1471-2121-3-22.txt
+technical/biomed/1471-213X-3-2.txt
+technical/biomed/1471-2148-1-1.txt
+technical/biomed/1471-2148-2-12.txt
+technical/biomed/1471-2148-3-3.txt
+technical/biomed/1471-2164-3-15.txt
+technical/biomed/1471-2172-1-1.txt
+technical/biomed/1471-2180-1-34.txt
+technical/biomed/1471-2180-2-26.txt
+technical/biomed/1471-2180-2-29.txt
+technical/biomed/1471-2180-3-9.txt
+technical/biomed/1471-2202-3-8.txt
+technical/biomed/1471-2288-3-9.txt
+technical/biomed/1471-230X-2-21.txt
+technical/biomed/1471-2334-1-17.txt
+technical/biomed/1471-2334-2-27.txt
+technical/biomed/1471-2334-2-7.txt
+technical/biomed/1471-2334-3-9.txt
+technical/biomed/1471-2407-3-4.txt
+technical/biomed/1471-2431-2-1.txt
+technical/biomed/1471-2458-2-11.txt
+technical/biomed/1471-2458-3-5.txt
+technical/biomed/1471-2474-2-3.txt
+technical/biomed/1472-6807-3-1.txt
+technical/biomed/1476-511X-1-2.txt
+technical/biomed/ar429.txt
+technical/biomed/gb-2001-2-12-research0051.txt
+technical/biomed/gb-2002-3-3-research0012.txt
+technical/biomed/gb-2003-4-2-r11.txt
+```
+I looked for all files that contain the pattern "viruses," in the technical/biomed directory, this can be useful to find the filenames of the file that coontain our keyword.
 
+### 
 
 ## grep -n
 searches for a specific pattern in one or more files and outputs the matching lines along with their line numbers. 
