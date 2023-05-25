@@ -20,7 +20,7 @@ technical/biomed/1475-925X-2-3.txt
 technical/biomed/gb-2002-3-12-research0077.txt
 nicholasshy@MacBook-Air-2 stringsearch-data % 
 ```
-I looked for all files that contain the pattern "while," in the technical/biomed directory, this can be useful to find the filenames of the file that coontain our keyword.
+I looked for all files that contain the pattern "while," in the technical/biomed directory, this can be useful to find the filenames of the file that coontain our keyword, whether they are the topic we are looking for or typos we want to correct.
 
 ### example 2
 ```
@@ -57,7 +57,7 @@ technical/biomed/gb-2001-2-12-research0051.txt
 technical/biomed/gb-2002-3-3-research0012.txt
 technical/biomed/gb-2003-4-2-r11.txt
 ```
-I looked for all files that contain the pattern "viruses," in the technical/biomed directory, this can be useful to find the filenames of the file that coontain our keyword.
+I looked for all files that contain the pattern "viruses," in the technical/biomed directory, this can be useful to find the filenames of the file that coontain our keyword, whether they are the topic we are looking for or typos we want to correct.
 
 ### 
 
@@ -65,9 +65,21 @@ I looked for all files that contain the pattern "viruses," in the technical/biom
 searches for a specific pattern in one or more files and outputs the matching lines along with their line numbers. 
 
 ### example 1
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -n "while," technical/biomed/1475-925X-2-3.txt  
+271:        inhibitory effect. Meanwhile, the alpha MNs are centrally
+```
+Since I found that the pattern "while," appeared in the file technical/biomed/1475-925X-2-3.txt, I used this command to find all the line numbers of where "while," appeared in the file. This can be heapful if we want to correct a typo and we know which file contains the typo.
 
 ### example 2
-
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -n "viruses," technical/biomed/gb-2003-4-2-r11.txt
+98:        DNA viruses, positive-strand RNA viruses and certain
+557:            and animal viruses, with the sole exception of a single
+609:            picornaviruses such as human parechoviruses, Aichi
+618:            including the forms from RNA viruses, clearly form a
+```
+Since I found that the pattern "viruses," appeared in the file technical/biomed/gb-2003-4-2-r11.txt, I used this command to find all the line numbers of where "viruses," appeared in the file. This can be heapful if we want to correct a typo and we know which file contains the typo.
 
 ## grep -C
 Also known as grep --context, allows you to specify the number of lines of context to display before and after each match. It helps provide additional context around the matching lines, making it easier to understand the context in which the pattern occurs.
