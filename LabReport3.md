@@ -85,8 +85,44 @@ Since I found that the pattern "viruses," appeared in the file technical/biomed/
 Also known as grep --context, allows you to specify the number of lines of context to display before and after each match. It helps provide additional context around the matching lines, making it easier to understand the context in which the pattern occurs.
 
 ### example 1
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -C 2 "while," technical/biomed/1475-925X-2-3.txt  
+        non-spindle muscle afferents have increased discharge rates
+        with increasing fatigue, also contributing to the
+        inhibitory effect. Meanwhile, the alpha MNs are centrally
+        inhibited by group III and IV muscle afferents, activated
+        by the accumulation of metabolites in the fatiguing muscle,
+```
+Find the specific number of lines (2 lines in this case) before and after all the lines that contain the pattern we give, "while,"(in this case, there is only one line that contain the pattern I provide), within the given file technical/biomed/1475-925X-2-3.txt. This can be useful to look at the surounding of a keyword that we have in mind in a file. 
 
 ### example 2
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -C 2 "viruses," technical/biomed/gb-2003-4-2-r11.txt
+        We also show that members of the N1pC superfamily exist
+        outside the bacterial superkingdom, in eukaryotes, large
+        DNA viruses, positive-strand RNA viruses and certain
+        archaea. In eukaryotes, one of the members of this family
+        has been studied experimentally, and possesses LRAT
+--
+            viral particle.
+            The LRAT family is thus far found only in eukaryotes
+            and animal viruses, with the sole exception of a single
+            member from the proteomes of 
+            Vibrio cholerae and 
+--
+            subgroups.
+            The viral homologs of H-rev107 were observed in
+            picornaviruses such as human parechoviruses, Aichi
+            virus and avian encephalomyelitis virus [ 63]. We also
+            detected related proteins in human caliciviruses such
+--
+            that could modify some membrane component, like their
+            cellular homologs. All the members of the LRAT family,
+            including the forms from RNA viruses, clearly form a
+            distinct family which excludes the YaeF/poxvirus G6R
+            family, which shows a similar circular permutation. The
+```
+Find the specific number of lines (2 lines in this case) before and after all the lines that contain the pattern we give, "viruses,"(in this case, there are 4 matching lines that contain the keyword I provided), within the given file technical/biomed/gb-2003-4-2-r11.txt. This can be useful to look at the surounding of a keyword that we have in mind in a file. 
 
 
 ## grep -r
