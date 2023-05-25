@@ -129,6 +129,36 @@ Find the specific number of lines (2 lines in this case) before and after all th
 The -r stands for "recursive," and it allows you to search files and directories recursively.
 
 ### example 1
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -r "while, a" technical
+technical/government/Media/Survey.txt:these recommendations from the bar groups. Meanwhile, at least two
+technical/biomed/gb-2002-3-12-research0077.txt:        Meanwhile, a search of the Protein Data Bank (PDB) for the
+technical/911report/chapter-3.txt:                Meanwhile, a task force headed by Vice President George H.W. Bush had endorsed a
+technical/911report/chapter-2.txt:                a new highway from Khartoum to Port Sudan on the Red Sea coast. Meanwhile, al Qaeda
+technical/911report/chapter-1.txt:    Meanwhile, a manager from Boston Center reported that they had deciphered what they had heard in one of the first hijacker transmissions from American 11: Boston Center: Hey . . . you still there?
+technical/911report/chapter-6.txt:                the whole government could support. Meanwhile, another counterterrorism veteran,
+```
+I looked tat the technical directory and all its subdirectories using grep -r to find the pattern I provided "while, a". It then gives me all the file names and the lines in those files that contains the pattern.  This is useful to find the files and lines that contains your keyword in a large directory.
 
 ### example 2
+```
+nicholasshy@MacBook-Air-2 stringsearch-data % grep -r "viruses, a" technical 
+technical/plos/pmed.0020117.txt:        people with non-subtype-B viruses, and also could help decide how patients with
+technical/plos/pmed.0020274.txt:        influenza viruses, parainfluenza viruses, and human metapneumovirus, but none of these
+technical/plos/journal.pbio.0020133.txt:        Carrington 1998). One of these, the p19 protein of tombusviruses, acts as a size-selective
+technical/plos/journal.pbio.0020276.txt:        is an example of a PAMP and is found in bacteria, viruses, and fungi. Receptors, called
+technical/biomed/1471-213X-3-2.txt:        transformed by Wnt-5a and Rfz-2 retroviruses, and C57mg
+technical/biomed/1472-6807-3-1.txt:        RNA viruses, amplification of RNA in eukaryotic
+technical/biomed/1471-2105-3-12.txt:          from several families of viruses, as well as
+technical/biomed/1471-2334-2-27.txt:        viruses, and HIV-1 BaL, a representative of R5 viruses,
+technical/biomed/1471-2148-1-1.txt:        gp64 -containing viruses, although
+technical/biomed/gb-2002-3-3-research0012.txt:        poxviruses, phycodnaviruses, phaeoviruses, asfarviruses,
+technical/biomed/gb-2002-3-3-research0012.txt:        (NCLDVs) [ 9]), baculoviruses and herpesviruses, also
+technical/biomed/gb-2002-3-3-research0012.txt:        viruses, as well as some of their host genomes.
+technical/biomed/gb-2002-3-3-research0012.txt:          and iridoviruses, also encoded homologs of the Bro
+technical/biomed/gb-2002-3-3-research0012.txt:          baculoviruses, and the entomopoxvirus MSV. Phylogenetic
+technical/biomed/gb-2001-2-12-research0051.txt:          DNA and double-stranded DNA viruses, and are essential
+technical/biomed/1471-2121-3-22.txt:        SKP2-ΔF mutant, SKP2 adenoviruses, and provided initial
+```
+I looked tat the technical directory and all its subdirectories using grep -r to find the pattern I provided "viruses, a". It then gives me all the file names and the lines in those files that contains the pattern. This is useful to find the files and lines that contains your keyword in a large directory.
 
