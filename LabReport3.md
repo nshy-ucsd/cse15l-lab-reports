@@ -6,11 +6,31 @@
 ## grep -l
 searches for a specific pattern in one or more files and outputs the names of the files that contain a match, rather than displaying the matching lines themselves. It is particularly useful when you want to quickly identify the files that contain a specific pattern without displaying the actual content of those files. This option is often combined with other grep options to refine the search.
 
+### example 1
+
+### example 2
+
+
 ## grep -n
 searches for a specific pattern in one or more files and outputs the matching lines along with their line numbers. 
+
+### example 1
+
+### example 2
+
 
 ## grep -C
 Also known as grep --context, allows you to specify the number of lines of context to display before and after each match. It helps provide additional context around the matching lines, making it easier to understand the context in which the pattern occurs.
 
+### example 1
+
+### example 2
+
+
 ## grep -r
 The -r stands for "recursive," and it allows you to search files and directories recursively.
+
+### example 1
+
+### example 2
+
