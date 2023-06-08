@@ -1,9 +1,9 @@
 # CSE15L Lab Report 4
 
 ## Task
-`
+
 For each numbered step starting right after the timer (so steps 4-9), take a screenshot, and write down exactly which keys you pressed to get to that step. For special characters like <enter> or <tab>, write them in angle brackets with code formatting. Then, summarize the commands you ran and what the effect of those keypresses were.
-`
+
 
 ## Log into ieng6
 
@@ -91,18 +91,23 @@ The command `e` jump to the end of the word, the command `x` deletes the charact
 ### Screenshot:
 
 After pressing `e`:
+
 <img width="705" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/6c56fbca-c6aa-4fb7-927a-79c8069bffe5">
 
 After pressing `x`:
+
 <img width="695" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/bb22e94d-8fcb-4b76-8346-4f372e2ab978">
   
 After pressing `i`:
+
 <img width="699" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/87b1c7e5-67db-4f1f-82e7-99d05a3337be">
 
 After pressing `2`:
+
 <img width="702" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/743a823b-22c9-4fa4-8cc9-9c8cf5560969">
 
 After pressing `<esc>`:
+
 <img width="698" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/6df3ad59-7dfc-4d6d-8b81-b8b47e1dffe7">
   
 ### Key pressed:
@@ -115,9 +120,11 @@ The command `:wq` saves the modification and quit `vim`.
 ### Screenshot:
 
 Before pressing `<enter>`:
+
 <img width="701" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/3292aec0-43aa-47d0-afc8-d693711a918b">
 
 After pressing `<enter>` (There are 2 `vim ListExamples.java` because I forgot to take a screenshot before enter vim the first time so I exit and did that part again):
+
 <img width="702" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/c642458b-50e1-4184-963d-848f24ec692c">
 
 ## Run the tests, demonstrating that they now succeed
@@ -132,12 +139,15 @@ This line of command goes back to the command line after the previous one, which
 ### Screenshot:
 
 After the first `<up>`:
+
 <img width="699" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/1ca38241-78a7-43b0-af23-fedfedfb2d08">
 
 After the second `<up>`:
+
 <img width="703" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/a88bf454-c38a-4515-92b6-ff617822df56">
 
 After pressing `<enter>`:
+
 <img width="688" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/708eee02-acca-4e44-b2a0-d424fe17ddab">
 
 ## Commit and push the resulting change to your Github account
@@ -161,10 +171,12 @@ Add the remote repo and push it to the github account
 ### Screenshot:
 
 remote add (Did this already but can't find that line of code so I did it again):
+
 <img width="679" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/d7a3a64f-5b38-4fc4-987a-8150239f67ea">
 
 
 push:
+
 <img width="677" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/c16871d2-89ad-4f2e-aa29-3d991b28c499">
 
 
