@@ -153,18 +153,19 @@ Finally go back to the terminal and push the result to github:
 ### Key pressed:
 
 ```
-exit<enter>
-ssh-keygen<enter><enter><enter><enter>
+git remote add origin git@github.com:nshy-ucsd/CSE15L-lab-report4-result.git
+git push lab7-result 
 ```
+Add the remote repo and push it to the github account
 
 ### Screenshot:
 
-Exit remote:
-<img width="699" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/0718a88e-da91-48b1-bfce-2764c7d58de3">
+remote add (Did this already but can't find that line of code so I did it again):
+<img width="679" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/d7a3a64f-5b38-4fc4-987a-8150239f67ea">
 
-After `ssh-keygen` and pressing `<enter>`:
-<img width="696" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/f615e355-9018-4d85-a4c1-d244f8ade20c">
 
-However, after this, I somehow are not able to log into my ieng6 account anymore:
-<img width="480" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/001d09d1-9bdc-4125-ab96-4ec845244b20">
+push:
+<img width="677" alt="image" src="https://github.com/nshy-ucsd/cse15l-lab-reports/assets/122579697/c16871d2-89ad-4f2e-aa29-3d991b28c499">
+
+
 
